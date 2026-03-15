@@ -1,31 +1,24 @@
 # Gavin Wu
 
-Software Architecture / AI Governance
+**Software Architecture / AI Governance**
 
-Exploring how **architecture contracts** can control and stabilize  
-AI-assisted software development.
+Exploring how **architecture contracts** can control and stabilize AI-assisted software development.
 
 ---
 
 ## Core Idea
 
-Modern AI coding tools can generate working code.
-
-But they often break **architecture boundaries**.
+Modern AI coding tools can generate working code — but they often break **architecture boundaries**.
 
 This project explores a different approach:
 
 > Treat architecture as **machine-enforced governance rules**.
 
-Instead of relying only on human code review,  
-architecture constraints become **machine-readable contracts**.
+Instead of relying only on human code review, architecture constraints become **machine-readable contracts** that AI tools must respect.
 
 ---
 
 ## Architecture
-
-## Architecture
-
 ```mermaid
 flowchart TB
     A[AI Governance Framework] --> B[Architecture Contract Layer]
@@ -34,90 +27,79 @@ flowchart TB
     B --> E[IC Verification Contract]
 ```
 
-Main Project
-AI Governance Framework
+---
 
-A framework designed to ensure that AI coding tools
-respect software architecture constraints.
+## Projects
 
-Key ideas:
+### AI Governance Framework
 
-Architecture rules as machine-readable governance
+A runtime framework that ensures AI coding tools respect software architecture constraints.
 
-Contract-driven development
+**Key capabilities**
 
-Architecture drift detection
+- Architecture rules as machine-readable governance contracts
+- Contract-driven development with domain plugin support
+- Architecture drift detection
+- Session lifecycle governance with audit trail
 
-AI context governance
+**Repo** → [ai-governance-framework](https://github.com/GavinWu672/ai-governance-framework)
 
-Repo:
+---
 
-https://github.com/GavinWu672/ai-governance-framework
+### Architecture Contract Experiments
 
-Architecture Contract Experiments
+These repositories apply governance concepts to specific engineering domains, each acting as a domain plugin to the framework.
 
-These repositories apply governance concepts
-to real engineering domains.
-
-USB Hub Firmware Architecture Contract
+#### USB Hub Firmware Architecture Contract
 
 Architecture constraints for embedded USB hub firmware systems.
 
-Focus:
+**Focus**
+- ISR safety and interrupt boundary enforcement
+- Shadow RAM state management
+- Memory resource constraints
 
-ISR safety
+**Repo** → [USB-Hub-Firmware-Architecture-Contract](https://github.com/GavinWu672/USB-Hub-Firmware-Architecture-Contract)
 
-Shadow RAM state management
+---
 
-Memory resource constraints
+#### Kernel Driver Contract
 
-Repo:
+Architecture governance for Windows kernel-mode driver development.
 
-https://github.com/GavinWu672/USB-Hub-Firmware-Architecture-Contract
+**Focus**
+- WDK safety rules and IRQL boundary enforcement
+- API surface protection
+- Kernel stability constraints
 
-Kernel Driver Contract
+**Repo** → [Kernel-Driver-Contract](https://github.com/GavinWu672/Kernel-Driver-Contract)
 
-Architecture governance for kernel-mode driver development.
+---
 
-Focus:
+#### IC Verification Contract
 
-WDK safety rules
+Architecture contracts for IC validation pipelines.
 
-API surface protection
+**Focus**
+- Spec-driven verification with machine-readable signal maps
+- DUT boundary enforcement
+- Reproducible test flows
 
-Kernel stability constraints
+**Repo** → [IC-Verification-Contract](https://github.com/GavinWu672/IC-Verification-Contract)
 
-Repo:
+---
 
-https://github.com/GavinWu672/Kernel-Driver-Contract
-
-IC Verification Contract
-
-Architecture contracts for validation pipelines.
-
-Focus:
-
-Spec-driven verification
-
-Reproducible test flows
-
-Repo:
-
-https://github.com/GavinWu672/IC-Verification-Contract
-
-Research Direction
+## Research Direction
 
 Current exploration areas:
 
-AI coding governance
+- AI coding governance and guardrail design
+- Architecture drift prevention in long-running AI sessions
+- Contract-based development workflows
+- AI-assisted engineering safety in high-risk domains
 
-Architecture drift prevention
+---
 
-Contract-based development workflows
+## Goal
 
-AI-assisted engineering safety
-
-Goal
-
-To explore whether architecture contracts can become
-the missing layer between AI coding tools and real-world software systems.
+To explore whether **architecture contracts** can become the missing layer between AI coding tools and real-world software systems — where domain knowledge is proprietary, errors are costly, and human review alone is insufficient.
