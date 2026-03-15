@@ -24,16 +24,15 @@ architecture constraints become **machine-readable contracts**.
 
 ## Architecture
 
+## Architecture
+
 ```mermaid
 flowchart TB
-
-A[AI Governance Framework]
-
-A --> B[Architecture Contract Layer]
-
-B --> C[USB Hub Firmware Contract]
-B --> D[Kernel Driver Contract]
-B --> E[IC Verification Contract]
+    A[AI Governance Framework] --> B[Architecture Contract Layer]
+    B --> C[USB Hub Firmware Contract]
+    B --> D[Kernel Driver Contract]
+    B --> E[IC Verification Contract]
+```
 
 Main Project
 AI Governance Framework
